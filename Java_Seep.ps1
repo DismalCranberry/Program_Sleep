@@ -9,7 +9,7 @@ while ($true) {
     "[$timestamp] Starting Java process..." | Out-File -Append "D:\Automation\Java\script_log.txt"
 
     # Run the Java command and wait for it to complete
-    & "C:\Program Files\Microsoft\jdk-21.0.4.7-hotspot\bin\java.exe" -Dpassword="PASSWORD" -Dusername=NAME -jar "D:\Automation\Java\main.jar" > D:\Automation\Java\output.log 2>&1
+    & "C:\Program Files\Microsoft\jdk-21.0.4.7-hotspot\bin\java.exe" -Dpassword="PASSWORD" -Dusername="NAME" -jar "D:\Automation\Java\main.jar" > D:\Automation\Java\output.log 2>&1
 
     # Log the completion of the process
     $endTime = Get-Date
